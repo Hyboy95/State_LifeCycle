@@ -1,24 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.css';
+import Alert from './components/AlertDelete/Alert';
+import AutoChangeColor from './components/AutoChangeColor';
+import LoginLogout from './components/Check/LoginLogout';
+import CountClick from './components/CountClick';
+import Expand from './components/Expand/Expand';
+import LoginForm from './components/Login_logout/LoginForm';
+import TodoList from './components/TodoList/TodoList';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <CountClick />
+      <AutoChangeColor />
+      <Alert/>
+      <LoginLogout/>
+      <Expand/>
+      <LoginForm/>
+      <TodoList/>
+    </>
   );
 }
 
